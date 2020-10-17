@@ -6,27 +6,29 @@ function TinderCards() {
 
   const [people, setPeople] = useState([
     {
-      name: "steve jobs",
+      name: "Steve Jobs",
       url:"https://www.biography.com/.image/t_share/MTY2MzU3OTcxMTUwODQxNTM1/steve-jobs--david-paul-morrisbloomberg-via-getty-images.jpg",
     },
     {
-      name: "mark zuckerberg",
-      url:"https://media.vanityfair.com/photos/5f1b08fd154906605854d34c/master/pass/Zuck734.jpg"
+      name: "Mark Zuckerberg",
+      url:"https://www.fortuneenespanol.com/wp-content/uploads/2018/05/mark-zuckerberg.imgo_-770x513.jpg"
     }
   ])
 
   return (
     <div>
       <h1>Tinder Cards</h1>
-
+      <div className="tinderCards__cardContainer">
       {people.map((person) => (
-        <TinderCard className="swipe" key={person.name} preventSwipe={["up", "down"]}>
+        <TinderCard 
+// @ts-ignore
+        className="swipe" key={person.name} preventSwipe={["up", "down"]}>
           <div className="card" style={{backgroundImage: `url(${person.url})`}}>
             <h3>{person.name}</h3>
           </div>          
         </TinderCard>
       ))}
-
+      </div>
     </div>
   )
 }

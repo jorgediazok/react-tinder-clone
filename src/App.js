@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="app">
     <h1>Tinder App 🚀 </h1>
+    <Header />
     </div>
   );
 }

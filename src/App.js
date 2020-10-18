@@ -1,9 +1,12 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import Header from './components/Header';
 import TinderCards from './components/TinderCards';
 import SwipeButtons from './components/SwipeButtons';
 import Chats from './components/Chats';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ChatScreen from './components/ChatScreen';
+
 import './App.css';
 
 function App() {
@@ -11,6 +14,10 @@ function App() {
     <div className="app">
       <Router>
         <Switch>
+          <Route path="/chat/:person">
+            <Header backButton="/chat" />
+            <ChatScreen />
+          </Route>
           <Route path="/chat">
             <Header backButton="/" />
             <Chats />

@@ -19,7 +19,7 @@ function Chats() {
       />
       <Chat
         name="Donald"
-        message="Dont vote for me 🇺🇸 "
+        message="Dont vote for me please 🤨  "
         timestamp="15 minutes ago"
         profilePic="https://www.eltiempo.com/files/image_640_428/files/crop/uploads/2020/09/28/5f724a21c9cd6.r_1601410202161.319-821-2775-2039.jpeg"
       />
